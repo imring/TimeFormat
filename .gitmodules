@@ -1,0 +1,6 @@
+[submodule "Yet-another-hook-library"]
+	path = Yet-another-hook-library
+	url = https://github.com/BlackKnigga/Yet-another-hook-library
+[submodule "mINI"]
+	path = mINI
+	url = https://github.com/pulzed/mINI
