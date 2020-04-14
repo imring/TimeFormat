@@ -67,7 +67,7 @@ class time_format {
 public:
     time_format() {
         SampVersion version = DetermineSampVersion();
-        if (version == -1) return;
+        if (version == SampVersion::SAMP_UNKNOWN) return;
         file.read(ini);
 
         static hook strftime_hook(reinterpret_cast<decltype(strftime)*>(samp_addr(strftime_addr[version])), strftime_hooked);
